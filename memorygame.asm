@@ -2,7 +2,7 @@ jmp main
 
 ;GAME MADE BY:
 ;Gustavo Sanches Rossi
-;Luis Henrique Hergesel de Lima
+;Luis Henrique Hergesel Lima
 ;Sandy da Costa Dutra
 
 ;variables used in the program------------------------------
