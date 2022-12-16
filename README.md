@@ -29,6 +29,6 @@ Eduardo's gitlab: https://gitlab.com/simoesusp/disciplinas
 Youtube video:
 
 ### Team:
-Gustavo Sanches Rossi
-Luis Henrique Hergesel Lima
-Sandy da Costa Dutra
+- Gustavo Sanches Rossi
+- Luis Henrique Hergesel Lima
+- Sandy da Costa Dutra
