@@ -4,7 +4,7 @@ Memory Game made during the Computer Organization and Architecture discipline le
 ## How to install
 Attention: if you're told to update something, DON'T DO IT!
 
-# Windows
+### Windows
 - Download the Simulator_Windows.zip
 - Extract the folder on your computer
 - Enter the folder Simulator-Windows/Sublime Text 3
@@ -13,7 +13,7 @@ Attention: if you're told to update something, DON'T DO IT!
 - Start the Simulator with the key F7
 - When the Simulator opens, press the key home to start the game
 
-# Linux
+### Linux
 - Download the Simulator_Linux.zip
 - Extract the folder on your computer
 - Follow the tutorial "How_to_install_the_Simulator.txt"
@@ -24,6 +24,6 @@ Attention: if you're told to update something, DON'T DO IT!
 - The game ends when all the cards are matched
 - The winner is the player with the most cards matched
 
-# Useful links
+### Useful links
 Eduardo's gitlab: https://gitlab.com/simoesusp/disciplinas
 Youtube video:
