@@ -1,4 +1,4 @@
-# Memory-Game
+# Memory Game
 Memory Game made during the Computer Organization and Architecture discipline lectured by Eduardo do Vale Simões
 
 ## How to install
@@ -27,3 +27,8 @@ Attention: if you're told to update something, DON'T DO IT!
 ### Useful links
 Eduardo's gitlab: https://gitlab.com/simoesusp/disciplinas
 Youtube video:
+
+### Team:
+Gustavo Sanches Rossi
+Luis Henrique Hergesel Lima
+Sandy da Costa Dutra
