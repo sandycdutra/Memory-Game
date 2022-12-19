@@ -46,7 +46,6 @@ void Montar(void)
     parser_Message("Descarregando buffer de saida...");
     parser_flush_program();
     parser_Write("END;");
-    parser_GetAttention("SUCESSO");
     parser_Message("Concluido.");
 
 }
@@ -958,38 +957,16 @@ void MontarInstrucoes(void)
                     free(str_tmp2);
                     parser_Write_Inst(str_msg,end_cnt);
                     end_cnt += 1;
-                    break;                    
-
-                /* ==============
-   
-                /* ==============
-                    POW3 Rx Ry
-                    ==============
-                
-
-                case POW3_CODE:
-                    str_tmp1 = parser_GetItem_s();
-                    val1 = BuscaRegistrador(str_tmp1);
-                    free(str_tmp1);
-                    parser_Match(',');
-                    str_tmp2 = parser_GetItem_s();
-                    val2 = BuscaRegistrador(str_tmp2);
-                    free(str_tmp2);
-                    str_tmp1 = ConverteRegistrador(val1);
-                    str_tmp2 = ConverteRegistrador(val2);
-                    sprintf(str_msg, "%s%s%s0000", POW3, str_tmp1, str_tmp2);
-                    free(str_tmp1);
-                    free(str_tmp2);
-                    parser_Write_Inst(str_msg, end_cnt);
-                    end_cnt += 1;
-                    break;*/
-                
+                    break;          
+                    
                 /* ==============
                    Pown Rx, Ry, Rz
                    ==============
                 */
+          
+                
 
-                case AND_CODE :
+                case POWN_CODE:
                     str_tmp1 = parser_GetItem_s();
                     val1 = BuscaRegistrador(str_tmp1);
                     free(str_tmp1);
@@ -997,20 +974,15 @@ void MontarInstrucoes(void)
                     str_tmp2 = parser_GetItem_s();
                     val2 = BuscaRegistrador(str_tmp2);
                     free(str_tmp2);
-                    parser_Match(',');
-                    str_tmp3 = parser_GetItem_s();
-                    val3 = BuscaRegistrador(str_tmp3);
-                    free(str_tmp3);
                     str_tmp1 = ConverteRegistrador(val1);
                     str_tmp2 = ConverteRegistrador(val2);
-                    str_tmp3 = ConverteRegistrador(val3);
-                    sprintf(str_msg,"%s%s%s%s0",POWN,str_tmp1,str_tmp2,str_tmp3);
+                    sprintf(str_msg, "%s%s%s0000", POWN, str_tmp1, str_tmp2);
                     free(str_tmp1);
                     free(str_tmp2);
-                    free(str_tmp3);
-                    parser_Write_Inst(str_msg,end_cnt);
+                    parser_Write_Inst(str_msg, end_cnt);
                     end_cnt += 1;
-                    break;
+                    break;      
+ 
 
                 /* ==============
                     Shiftl0 Rx, #n
