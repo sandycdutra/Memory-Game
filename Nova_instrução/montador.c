@@ -206,7 +206,7 @@ void DetectarLabels(void)
 	        case LMOD_CODE :	    
             case AND_CODE :
             case OR_CODE :
-            case POWN_CODE : // NOVA INSTRUCAO -> Elevar ao cubo
+            case POWN_CODE : // NOVA INSTRUCAO
             case XOR_CODE :
                 parser_SkipUntil(',');
                 parser_SkipUntil(',');
@@ -218,7 +218,6 @@ void DetectarLabels(void)
             case NOT_CODE :	/* Eu pus aqui pois sera' Rx <- Not Ry */
 	        case MOV_CODE :
             case OUTCHAR_CODE :
-            //case POW3_CODE : // NOVA INSTRUCAO -> Elevar ao cubo
             case CMP_CODE :
                 parser_SkipUntil(',');
                 parser_SkipUntilEnd();
@@ -2653,10 +2652,6 @@ int BuscaInstrucao(char * nome)
     {
         return ALLOC_CODE;
     }
-    /* else if (strcmp(str_tmp, POW3_STR) == 0)
-    {
-        return POW3_CODE;
-    } */
     else if (strcmp(str_tmp, POWN_STR) == 0)
     {
         return POWN_CODE;
