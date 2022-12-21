@@ -356,8 +356,6 @@ printBack:
 	push r2
 	push r3
 	
-	loadn r2, #0
-	
 	loadn r0, #0
 	load r3, flag0
 	cmp r0, r3
