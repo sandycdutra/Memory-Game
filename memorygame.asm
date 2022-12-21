@@ -171,6 +171,56 @@ main:
 	pop r0
 	halt
 
+;prints the tutorial's screen
+showTutorial:
+	push r1
+	push r2
+	
+	loadn r2, #0
+	loadn r1, #screen2line1 ;tutorial's screen
+	call printScreenOverlap
+	
+	pop r2
+	pop r1
+	
+	rts
+
+;prints the game screen
+printAllFront:
+
+	call printTitle
+	
+	call printCard0
+	call printCard1
+	call printCard2
+	call printCard3
+	call printCard4
+	call printCard5
+	call printCard6
+	call printCard7
+	call printCard8
+	call printCard9
+	
+	call printScoreboard
+
+	rts
+
+;prints all the cards facing down
+printAllBack:
+
+	call printCard0back
+	call printCard1back
+	call printCard2back
+	call printCard3back
+	call printCard4back
+	call printCard5back
+	call printCard6back
+	call printCard7back
+	call printCard8back
+	call printCard9back
+
+	rts
+
 printFront:
 	push r1
 	push r2
@@ -663,56 +713,6 @@ printScore:
 	pop r3
 	pop r2
 
-	rts
-
-;prints the game screen
-printAllFront:
-
-	call printTitle
-	
-	call printCard0
-	call printCard1
-	call printCard2
-	call printCard3
-	call printCard4
-	call printCard5
-	call printCard6
-	call printCard7
-	call printCard8
-	call printCard9
-	
-	call printScoreboard
-
-	rts
-
-;prints all the cards facing down
-printAllBack:
-
-	call printCard0back
-	call printCard1back
-	call printCard2back
-	call printCard3back
-	call printCard4back
-	call printCard5back
-	call printCard6back
-	call printCard7back
-	call printCard8back
-	call printCard9back
-
-	rts
-
-;prints the tutorial's screen
-showTutorial:
-	push r1
-	push r2
-	
-	loadn r2, #0
-	loadn r1, #screen2line1 ;tutorial's screen
-	call printScreenOverlap
-	
-	pop r2
-	pop r1
-	
 	rts
 
 ;prints whole screens
