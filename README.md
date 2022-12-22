@@ -26,7 +26,7 @@ Attention: if you're told to update something, DON'T DO IT!
 
 ### Useful links
 - Eduardo's gitlab: https://gitlab.com/simoesusp/disciplinas
-- Video showing the game:
+- Video showing the game: https://www.youtube.com/watch?v=ECcyKo9bkG8
 
 ### Team:
 - Gustavo Sanches Rossi
